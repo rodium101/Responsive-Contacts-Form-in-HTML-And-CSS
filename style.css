@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alata&family=Neuton:wght@300&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Neuton', serif;
+  }
+
+  body{
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conatiner{
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .conatiner .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .conatiner .content .leftside{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .leftside::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+.content .leftside .details{
+  margin: 14px;
+  text-align: center;
+}
+
+.content .leftside .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 8px;
+}
+  .conatiner .content .rightside{
+    width: 75%;
+    margin-left: 75px;
+  }
+
+  .content .leftside .details .add{
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .content .rightside .texta{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+  }
+
+  .rightside .inputbox{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .rightside .inputbox input,
+  .rightside .inputbox textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: #c9cbe0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+  }
+
+  .content .leftside .details .adda,
+  .content .leftside .details .addae{
+    font-size: 14px;
+    columns: #afafb6;
+    resize: none;
+  }
+
+  .rightside .messagbox{
+    min-height: 110px;
+   
+    
+  }
+  .rightside .submit{
+    display: inline-block;
+    margin-top: 10px;
+    }
+  .rightside .submit input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit input[type="button"]:hover{
+    background: #5029bc;
+  }
+
+
+  @media (max-width: 950px) {
+    .conatiner{
+      width: 90%;
+      padding: 30px 35px 40px 35px;
+    }
+    
+  }
+
+  
+  @media (max-width: 800px) {
+    .conatiner{
+      margin: 40px 0;
+      height: 100%;
+    }
+
+    .conatiner .content{
+      flex-direction: column-reverse;
+    }
+
+    .conatiner .content .leftside{
+      width: 100%;
+      flex-direction: row;
+      margin-top: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .conatiner .content .leftside::before{
+      display: none;
+    }
+
+    .conatiner .content .rightside{
+      width: 100%;
+      margin-left: 0;
+    }
+    
+  }
